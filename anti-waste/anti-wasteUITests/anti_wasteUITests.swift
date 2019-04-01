@@ -3,7 +3,7 @@
 //  anti-wasteUITests
 //
 //  Created by Matthieu T on 01/04/2019.
-//  Copyright © 2019 Matthieu TOUSSAINT. All rights reserved.
+//  Copyright © 2019 MT Creative. All rights reserved.
 //
 
 import XCTest
