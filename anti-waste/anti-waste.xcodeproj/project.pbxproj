@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DB9C02972252669A00042B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02962252669A00042B5C /* AppDelegate.swift */; };
+		DB9C02992252669A00042B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02982252669A00042B5C /* ViewController.swift */; };
+		DB9C029C2252669A00042B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9C029A2252669A00042B5C /* Main.storyboard */; };
+		DB9C029E2252669A00042B5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB9C029D2252669A00042B5C /* Assets.xcassets */; };
+		DB9C02A12252669A00042B5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9C029F2252669A00042B5C /* LaunchScreen.storyboard */; };
+		DB9C02AC2252669B00042B5C /* anti_wasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02AB2252669B00042B5C /* anti_wasteTests.swift */; };
+		DB9C02B72252669B00042B5C /* anti_wasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02B62252669B00042B5C /* anti_wasteUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DB9C02A82252669B00042B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9C028B2252669900042B5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB9C02922252669900042B5C;
+			remoteInfo = "anti-waste";
+		};
+		DB9C02B32252669B00042B5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB9C028B2252669900042B5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB9C02922252669900042B5C;
+			remoteInfo = "anti-waste";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		DB9C02932252669A00042B5C /* anti-waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "anti-waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9C02962252669A00042B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DB9C02982252669A00042B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DB9C029B2252669A00042B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DB9C029D2252669A00042B5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DB9C02A02252669A00042B5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DB9C02A22252669A00042B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9C02A72252669B00042B5C /* anti-wasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "anti-wasteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9C02AB2252669B00042B5C /* anti_wasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anti_wasteTests.swift; sourceTree = "<group>"; };
+		DB9C02AD2252669B00042B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB9C02B22252669B00042B5C /* anti-wasteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "anti-wasteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB9C02B62252669B00042B5C /* anti_wasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anti_wasteUITests.swift; sourceTree = "<group>"; };
+		DB9C02B82252669B00042B5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DB9C02902252669900042B5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02A42252669B00042B5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02AF2252669B00042B5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DB9C028A2252669900042B5C = {
+			isa = PBXGroup;
+			children = (
+				DB9C02952252669A00042B5C /* anti-waste */,
+				DB9C02AA2252669B00042B5C /* anti-wasteTests */,
+				DB9C02B52252669B00042B5C /* anti-wasteUITests */,
+				DB9C02942252669A00042B5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DB9C02942252669A00042B5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C02932252669A00042B5C /* anti-waste.app */,
+				DB9C02A72252669B00042B5C /* anti-wasteTests.xctest */,
+				DB9C02B22252669B00042B5C /* anti-wasteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DB9C02952252669A00042B5C /* anti-waste */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C02962252669A00042B5C /* AppDelegate.swift */,
+				DB9C02982252669A00042B5C /* ViewController.swift */,
+				DB9C029A2252669A00042B5C /* Main.storyboard */,
+				DB9C029D2252669A00042B5C /* Assets.xcassets */,
+				DB9C029F2252669A00042B5C /* LaunchScreen.storyboard */,
+				DB9C02A22252669A00042B5C /* Info.plist */,
+			);
+			path = "anti-waste";
+			sourceTree = "<group>";
+		};
+		DB9C02AA2252669B00042B5C /* anti-wasteTests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C02AB2252669B00042B5C /* anti_wasteTests.swift */,
+				DB9C02AD2252669B00042B5C /* Info.plist */,
+			);
+			path = "anti-wasteTests";
+			sourceTree = "<group>";
+		};
+		DB9C02B52252669B00042B5C /* anti-wasteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DB9C02B62252669B00042B5C /* anti_wasteUITests.swift */,
+				DB9C02B82252669B00042B5C /* Info.plist */,
+			);
+			path = "anti-wasteUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DB9C02922252669900042B5C /* anti-waste */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9C02BB2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-waste" */;
+			buildPhases = (
+				DB9C028F2252669900042B5C /* Sources */,
+				DB9C02902252669900042B5C /* Frameworks */,
+				DB9C02912252669900042B5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "anti-waste";
+			productName = "anti-waste";
+			productReference = DB9C02932252669A00042B5C /* anti-waste.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DB9C02A62252669B00042B5C /* anti-wasteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9C02BE2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteTests" */;
+			buildPhases = (
+				DB9C02A32252669B00042B5C /* Sources */,
+				DB9C02A42252669B00042B5C /* Frameworks */,
+				DB9C02A52252669B00042B5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB9C02A92252669B00042B5C /* PBXTargetDependency */,
+			);
+			name = "anti-wasteTests";
+			productName = "anti-wasteTests";
+			productReference = DB9C02A72252669B00042B5C /* anti-wasteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DB9C02B12252669B00042B5C /* anti-wasteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB9C02C12252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteUITests" */;
+			buildPhases = (
+				DB9C02AE2252669B00042B5C /* Sources */,
+				DB9C02AF2252669B00042B5C /* Frameworks */,
+				DB9C02B02252669B00042B5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DB9C02B42252669B00042B5C /* PBXTargetDependency */,
+			);
+			name = "anti-wasteUITests";
+			productName = "anti-wasteUITests";
+			productReference = DB9C02B22252669B00042B5C /* anti-wasteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DB9C028B2252669900042B5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Matthieu TOUSSAINT";
+				TargetAttributes = {
+					DB9C02922252669900042B5C = {
+						CreatedOnToolsVersion = 10.2;
+					};
+					DB9C02A62252669B00042B5C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DB9C02922252669900042B5C;
+					};
+					DB9C02B12252669B00042B5C = {
+						CreatedOnToolsVersion = 10.2;
+						TestTargetID = DB9C02922252669900042B5C;
+					};
+				};
+			};
+			buildConfigurationList = DB9C028E2252669900042B5C /* Build configuration list for PBXProject "anti-waste" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DB9C028A2252669900042B5C;
+			productRefGroup = DB9C02942252669A00042B5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DB9C02922252669900042B5C /* anti-waste */,
+				DB9C02A62252669B00042B5C /* anti-wasteTests */,
+				DB9C02B12252669B00042B5C /* anti-wasteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB9C02912252669900042B5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9C02A12252669A00042B5C /* LaunchScreen.storyboard in Resources */,
+				DB9C029E2252669A00042B5C /* Assets.xcassets in Resources */,
+				DB9C029C2252669A00042B5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02A52252669B00042B5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02B02252669B00042B5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DB9C028F2252669900042B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9C02992252669A00042B5C /* ViewController.swift in Sources */,
+				DB9C02972252669A00042B5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02A32252669B00042B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9C02AC2252669B00042B5C /* anti_wasteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB9C02AE2252669B00042B5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB9C02B72252669B00042B5C /* anti_wasteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DB9C02A92252669B00042B5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB9C02922252669900042B5C /* anti-waste */;
+			targetProxy = DB9C02A82252669B00042B5C /* PBXContainerItemProxy */;
+		};
+		DB9C02B42252669B00042B5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB9C02922252669900042B5C /* anti-waste */;
+			targetProxy = DB9C02B32252669B00042B5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DB9C029A2252669A00042B5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB9C029B2252669A00042B5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DB9C029F2252669A00042B5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DB9C02A02252669A00042B5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DB9C02B92252669B00042B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DB9C02BA2252669B00042B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DB9C02BC2252669B00042B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-waste/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-waste";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB9C02BD2252669B00042B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-waste/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-waste";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DB9C02BF2252669B00042B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-wasteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-wasteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anti-waste.app/anti-waste";
+			};
+			name = Debug;
+		};
+		DB9C02C02252669B00042B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-wasteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-wasteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/anti-waste.app/anti-waste";
+			};
+			name = Release;
+		};
+		DB9C02C22252669B00042B5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-wasteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-wasteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "anti-waste";
+			};
+			name = Debug;
+		};
+		DB9C02C32252669B00042B5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "anti-wasteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.mt.anti-wasteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "anti-waste";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DB9C028E2252669900042B5C /* Build configuration list for PBXProject "anti-waste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9C02B92252669B00042B5C /* Debug */,
+				DB9C02BA2252669B00042B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9C02BB2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-waste" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9C02BC2252669B00042B5C /* Debug */,
+				DB9C02BD2252669B00042B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9C02BE2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9C02BF2252669B00042B5C /* Debug */,
+				DB9C02C02252669B00042B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DB9C02C12252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB9C02C22252669B00042B5C /* Debug */,
+				DB9C02C32252669B00042B5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DB9C028B2252669900042B5C /* Project object */;
+}
