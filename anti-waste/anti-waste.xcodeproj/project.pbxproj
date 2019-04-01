@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30006A56159470DEC5A87027 /* Pods_anti_wasteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1427760310100BE7019BF20B /* Pods_anti_wasteTests.framework */; };
+		39CEF57A081693E79F7D6D23 /* Pods_anti_waste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F0BFBB8BFDB435E90572A4 /* Pods_anti_waste.framework */; };
+		5D106635365E38697C02D59A /* Pods_anti_wasteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B054A8C05CF2F1BEBCEFF37 /* Pods_anti_wasteUITests.framework */; };
 		DB9C02972252669A00042B5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02962252669A00042B5C /* AppDelegate.swift */; };
 		DB9C02992252669A00042B5C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB9C02982252669A00042B5C /* ViewController.swift */; };
 		DB9C029C2252669A00042B5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB9C029A2252669A00042B5C /* Main.storyboard */; };
@@ -34,6 +37,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1427760310100BE7019BF20B /* Pods_anti_wasteTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anti_wasteTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		17DF3A69BF4F080F28D040EB /* Pods-anti-wasteTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteTests/Pods-anti-wasteTests.debug.xcconfig"; sourceTree = "<group>"; };
+		21DF8BE6AA0E16902219617A /* Pods-anti-wasteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteUITests/Pods-anti-wasteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4B054A8C05CF2F1BEBCEFF37 /* Pods_anti_wasteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anti_wasteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD98AB9E2FB857C80EAEF8E /* Pods-anti-wasteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteUITests/Pods-anti-wasteUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6093F7D29BBD5EAC778B806 /* Pods-anti-waste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.release.xcconfig"; sourceTree = "<group>"; };
+		B6F0BFBB8BFDB435E90572A4 /* Pods_anti_waste.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anti_waste.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5F9C64C4247BAE837106BB0 /* Pods-anti-wasteTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteTests/Pods-anti-wasteTests.release.xcconfig"; sourceTree = "<group>"; };
+		CC41DE015CFF2273F3AA7537 /* Pods-anti-waste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.debug.xcconfig"; sourceTree = "<group>"; };
 		DB9C02932252669A00042B5C /* anti-waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "anti-waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB9C02962252669A00042B5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB9C02982252669A00042B5C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				39CEF57A081693E79F7D6D23 /* Pods_anti_waste.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				30006A56159470DEC5A87027 /* Pods_anti_wasteTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,12 +82,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D106635365E38697C02D59A /* Pods_anti_wasteUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1889E88B81D369995290B8BF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B6F0BFBB8BFDB435E90572A4 /* Pods_anti_waste.framework */,
+				1427760310100BE7019BF20B /* Pods_anti_wasteTests.framework */,
+				4B054A8C05CF2F1BEBCEFF37 /* Pods_anti_wasteUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB9C028A2252669900042B5C = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +106,8 @@
 				DB9C02AA2252669B00042B5C /* anti-wasteTests */,
 				DB9C02B52252669B00042B5C /* anti-wasteUITests */,
 				DB9C02942252669A00042B5C /* Products */,
+				F581428EA56C828C15DF9020 /* Pods */,
+				1889E88B81D369995290B8BF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +152,19 @@
 			path = "anti-wasteUITests";
 			sourceTree = "<group>";
 		};
+		F581428EA56C828C15DF9020 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC41DE015CFF2273F3AA7537 /* Pods-anti-waste.debug.xcconfig */,
+				B6093F7D29BBD5EAC778B806 /* Pods-anti-waste.release.xcconfig */,
+				17DF3A69BF4F080F28D040EB /* Pods-anti-wasteTests.debug.xcconfig */,
+				C5F9C64C4247BAE837106BB0 /* Pods-anti-wasteTests.release.xcconfig */,
+				7BD98AB9E2FB857C80EAEF8E /* Pods-anti-wasteUITests.debug.xcconfig */,
+				21DF8BE6AA0E16902219617A /* Pods-anti-wasteUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB9C02BB2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-waste" */;
 			buildPhases = (
+				376B7B51D5514B5D8DA5CACB /* [CP] Check Pods Manifest.lock */,
 				DB9C028F2252669900042B5C /* Sources */,
 				DB9C02902252669900042B5C /* Frameworks */,
 				DB9C02912252669900042B5C /* Resources */,
+				77527E7CF70DFC75DE2049A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -149,6 +191,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB9C02BE2252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteTests" */;
 			buildPhases = (
+				F9FF5EDC38C5F43D5C34836A /* [CP] Check Pods Manifest.lock */,
 				DB9C02A32252669B00042B5C /* Sources */,
 				DB9C02A42252669B00042B5C /* Frameworks */,
 				DB9C02A52252669B00042B5C /* Resources */,
@@ -167,6 +210,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB9C02C12252669B00042B5C /* Build configuration list for PBXNativeTarget "anti-wasteUITests" */;
 			buildPhases = (
+				3DFE43B9749DC8827D67DF15 /* [CP] Check Pods Manifest.lock */,
 				DB9C02AE2252669B00042B5C /* Sources */,
 				DB9C02AF2252669B00042B5C /* Frameworks */,
 				DB9C02B02252669B00042B5C /* Resources */,
@@ -250,6 +294,97 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		376B7B51D5514B5D8DA5CACB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-anti-waste-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DFE43B9749DC8827D67DF15 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-anti-wasteUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77527E7CF70DFC75DE2049A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BarcodeScanner/BarcodeScanner.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BarcodeScanner.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9FF5EDC38C5F43D5C34836A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-anti-wasteTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		DB9C028F2252669900042B5C /* Sources */ = {
@@ -430,6 +565,7 @@
 		};
 		DB9C02BC2252669B00042B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC41DE015CFF2273F3AA7537 /* Pods-anti-waste.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -447,6 +583,7 @@
 		};
 		DB9C02BD2252669B00042B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6093F7D29BBD5EAC778B806 /* Pods-anti-waste.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -464,6 +601,7 @@
 		};
 		DB9C02BF2252669B00042B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 17DF3A69BF4F080F28D040EB /* Pods-anti-wasteTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +622,7 @@
 		};
 		DB9C02C02252669B00042B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5F9C64C4247BAE837106BB0 /* Pods-anti-wasteTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -504,6 +643,7 @@
 		};
 		DB9C02C22252669B00042B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7BD98AB9E2FB857C80EAEF8E /* Pods-anti-wasteUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -523,6 +663,7 @@
 		};
 		DB9C02C32252669B00042B5C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21DF8BE6AA0E16902219617A /* Pods-anti-wasteUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
