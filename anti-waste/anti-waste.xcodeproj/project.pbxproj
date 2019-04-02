@@ -18,7 +18,6 @@
 		DB45E07A22526C4B0009CB4A /* anti_wasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E07922526C4B0009CB4A /* anti_wasteTests.swift */; };
 		DB45E08522526C4B0009CB4A /* anti_wasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E08422526C4B0009CB4A /* anti_wasteUITests.swift */; };
 		DB45E09722526D1F0009CB4A /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E09622526D1F0009CB4A /* ScannerViewController.swift */; };
-		DB45E099225271B30009CB4A /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45E098225271B30009CB4A /* Scanner.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,7 +59,6 @@
 		DB45E08422526C4B0009CB4A /* anti_wasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anti_wasteUITests.swift; sourceTree = "<group>"; };
 		DB45E08622526C4B0009CB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB45E09622526D1F0009CB4A /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
-		DB45E098225271B30009CB4A /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 		E66259B885EB267E41484D2C /* Pods-anti-waste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF62E7175E865095E71EC88 /* Pods-anti-waste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -144,7 +142,6 @@
 				DB45E06422526C4A0009CB4A /* AppDelegate.swift */,
 				DB45E06622526C4A0009CB4A /* ViewController.swift */,
 				DB45E09622526D1F0009CB4A /* ScannerViewController.swift */,
-				DB45E098225271B30009CB4A /* Scanner.storyboard */,
 				DB45E06822526C4A0009CB4A /* Main.storyboard */,
 				DB45E06D22526C4B0009CB4A /* LaunchScreen.storyboard */,
 				DB45E06B22526C4B0009CB4A /* Assets.xcassets */,
@@ -282,7 +279,6 @@
 				DB45E06F22526C4B0009CB4A /* LaunchScreen.storyboard in Resources */,
 				DB45E06C22526C4B0009CB4A /* Assets.xcassets in Resources */,
 				DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */,
-				DB45E099225271B30009CB4A /* Scanner.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
