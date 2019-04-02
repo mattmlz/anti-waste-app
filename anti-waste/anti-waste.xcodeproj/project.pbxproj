@@ -13,6 +13,7 @@
 		DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22C2253A0970078482C /* Lato-Bold.ttf */; };
 		DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22D2253A0980078482C /* Lato-Heavy.ttf */; };
 		DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22E2253A0990078482C /* Lato-Regular.ttf */; };
+		DB05A2352253AB4D0078482C /* Scanner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB05A2342253AB4D0078482C /* Scanner.storyboard */; };
 		DB45E06522526C4A0009CB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06422526C4A0009CB4A /* AppDelegate.swift */; };
 		DB45E06722526C4A0009CB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06622526C4A0009CB4A /* ViewController.swift */; };
 		DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45E06822526C4A0009CB4A /* Main.storyboard */; };
@@ -52,6 +53,7 @@
 		DB05A22C2253A0970078482C /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
 		DB05A22D2253A0980078482C /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
 		DB05A22E2253A0990078482C /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
+		DB05A2342253AB4D0078482C /* Scanner.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Scanner.storyboard; sourceTree = "<group>"; };
 		DB45E06122526C4A0009CB4A /* anti-waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "anti-waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45E06422526C4A0009CB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB45E06622526C4A0009CB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				DB45E06622526C4A0009CB4A /* ViewController.swift */,
 				DB45E09622526D1F0009CB4A /* ScannerViewController.swift */,
 				DB45E06822526C4A0009CB4A /* Main.storyboard */,
+				DB05A2342253AB4D0078482C /* Scanner.storyboard */,
 				DB45E06D22526C4B0009CB4A /* LaunchScreen.storyboard */,
 				DB45E06B22526C4B0009CB4A /* Assets.xcassets */,
 				DB05A22B2253A0810078482C /* fonts */,
@@ -297,6 +300,7 @@
 				DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */,
 				DB45E06F22526C4B0009CB4A /* LaunchScreen.storyboard in Resources */,
 				DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */,
+				DB05A2352253AB4D0078482C /* Scanner.storyboard in Resources */,
 				DB45E06C22526C4B0009CB4A /* Assets.xcassets in Resources */,
 				DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */,
 				DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */,

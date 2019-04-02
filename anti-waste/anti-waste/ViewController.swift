@@ -51,6 +51,16 @@ class ViewController: UIViewController {
     
     @objc func handleContinue(sender: UIButton) {
         let index = sender.tag
+        
+        if index == 2 {
+            //Perfom continue if user is on the last onboarding screen
+            print("ok")
+            
+            let storyboard = UIStoryboard(name: "Scanner", bundle: nil)
+            let scannerViewController = storyboard.instantiateViewController(withIdentifier: "ScannerViewController")
+            self.present(scannerViewController, animated: true, completion: nil)
+        }
+        
         swiftyOnboard?.goToPage(index: index + 1, animated: true)
     }
 }
@@ -105,7 +115,7 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
     func swiftyOnboardOverlayForPosition(_ swiftyOnboard: SwiftyOnboard, overlay: SwiftyOnboardOverlay, for position: Double) {
         let currentPage = round(position)
         overlay.pageControl.currentPage = Int(currentPage)
-        print(Int(currentPage))
+        //print(Int(currentPage))
         overlay.continueButton.tag = Int(position)
         
         if currentPage == 0.0 || currentPage == 1.0 {
