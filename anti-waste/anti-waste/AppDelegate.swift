@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         
         //Use this value set to false for development mode, comment line 24 if you're in production mode
-        //UserDefaults.standard.set(false, forKey: "launchedBefore")
+        UserDefaults.standard.set(false, forKey: "launchedBefore")
         
         if launchedBefore == true {
             let stor = UIStoryboard.init(name: "Scanner", bundle: nil)
