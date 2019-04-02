@@ -10,6 +10,9 @@
 		0021F27E6BC6AB5E918D328C /* Pods_anti_wasteTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2330B7B8F15B7DED8EE289A1 /* Pods_anti_wasteTests.framework */; };
 		12BF6D12CE100F80A60046EA /* Pods_anti_wasteUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD08EA55A99DA62D9E252E3E /* Pods_anti_wasteUITests.framework */; };
 		639E3AC5370401C4ACB11198 /* Pods_anti_waste.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37663163D6C7F56B3CFED527 /* Pods_anti_waste.framework */; };
+		DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22C2253A0970078482C /* Lato-Bold.ttf */; };
+		DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22D2253A0980078482C /* Lato-Heavy.ttf */; };
+		DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB05A22E2253A0990078482C /* Lato-Regular.ttf */; };
 		DB45E06522526C4A0009CB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06422526C4A0009CB4A /* AppDelegate.swift */; };
 		DB45E06722526C4A0009CB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06622526C4A0009CB4A /* ViewController.swift */; };
 		DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45E06822526C4A0009CB4A /* Main.storyboard */; };
@@ -18,6 +21,7 @@
 		DB45E07A22526C4B0009CB4A /* anti_wasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E07922526C4B0009CB4A /* anti_wasteTests.swift */; };
 		DB45E08522526C4B0009CB4A /* anti_wasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E08422526C4B0009CB4A /* anti_wasteUITests.swift */; };
 		DB45E09722526D1F0009CB4A /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E09622526D1F0009CB4A /* ScannerViewController.swift */; };
+		DB72A95D22539CC70058CE98 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB45E07022526C4B0009CB4A /* Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,9 @@
 		9DACBB64AF58249BD7BB35BF /* Pods-anti-wasteUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteUITests/Pods-anti-wasteUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CD08EA55A99DA62D9E252E3E /* Pods_anti_wasteUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_anti_wasteUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FF8365CD177AF46D160831 /* Pods-anti-wasteUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-wasteUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-wasteUITests/Pods-anti-wasteUITests.release.xcconfig"; sourceTree = "<group>"; };
+		DB05A22C2253A0970078482C /* Lato-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Bold.ttf"; sourceTree = "<group>"; };
+		DB05A22D2253A0980078482C /* Lato-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Heavy.ttf"; sourceTree = "<group>"; };
+		DB05A22E2253A0990078482C /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		DB45E06122526C4A0009CB4A /* anti-waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "anti-waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45E06422526C4A0009CB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB45E06622526C4A0009CB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +121,16 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		DB05A22B2253A0810078482C /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DB05A22C2253A0970078482C /* Lato-Bold.ttf */,
+				DB05A22D2253A0980078482C /* Lato-Heavy.ttf */,
+				DB05A22E2253A0990078482C /* Lato-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		DB45E05822526C4A0009CB4A = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +162,7 @@
 				DB45E06822526C4A0009CB4A /* Main.storyboard */,
 				DB45E06D22526C4B0009CB4A /* LaunchScreen.storyboard */,
 				DB45E06B22526C4B0009CB4A /* Assets.xcassets */,
+				DB05A22B2253A0810078482C /* fonts */,
 				DB45E07022526C4B0009CB4A /* Info.plist */,
 			);
 			path = "anti-waste";
@@ -276,9 +294,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */,
 				DB45E06F22526C4B0009CB4A /* LaunchScreen.storyboard in Resources */,
+				DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */,
 				DB45E06C22526C4B0009CB4A /* Assets.xcassets in Resources */,
+				DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */,
 				DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */,
+				DB72A95D22539CC70058CE98 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
