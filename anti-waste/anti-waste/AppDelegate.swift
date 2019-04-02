@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //UserDefaults.standard.set(false, forKey: "launchedBefore")
         
         if launchedBefore == true {
-            print("Not first launch.")
             let stor = UIStoryboard.init(name: "Scanner", bundle: nil)
             let scannerViewController = stor.instantiateViewController(withIdentifier: "ScannerViewController")
             let nav = UINavigationController(rootViewController: scannerViewController)
@@ -32,7 +31,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.rootViewController = nav
             
         } else {
-            print("First launch")
             UserDefaults.standard.set(true, forKey: "launchedBefore")
         }
         
