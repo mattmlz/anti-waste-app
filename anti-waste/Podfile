@@ -4,9 +4,9 @@
 target 'anti-waste' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
-  pod 'SwiftyOnboard'
 
   # Pods for anti-waste
+  pod 'SwiftyOnboard'
 
   target 'anti-wasteTests' do
     inherit! :search_paths
