@@ -54,11 +54,9 @@ class ViewController: UIViewController {
         
         if index == 2 {
             //Perfom continue if user is on the last onboarding screen
-            print("ok")
-            
-            let storyboard = UIStoryboard(name: "Scanner", bundle: nil)
-            let scannerViewController = storyboard.instantiateViewController(withIdentifier: "ScannerViewController")
-            self.present(scannerViewController, animated: true, completion: nil)
+            let scannerViewController = ScannerViewController()
+            scannerViewController.modalTransitionStyle = .crossDissolve
+            present(scannerViewController, animated: true, completion: nil)
         }
         
         swiftyOnboard?.goToPage(index: index + 1, animated: true)
