@@ -16,6 +16,26 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        //Skip onboarding screen when it's not first launch
+        let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
+        
+        //Use this value set to false for development mode, comment line 24 if you're in production mode
+        //UserDefaults.standard.set(false, forKey: "launchedBefore")
+        
+        if launchedBefore == true {
+            print("Not first launch.")
+            let stor = UIStoryboard.init(name: "Scanner", bundle: nil)
+            let scannerViewController = stor.instantiateViewController(withIdentifier: "ScannerViewController")
+            let nav = UINavigationController(rootViewController: scannerViewController)
+            nav.navigationBar.isHidden = true
+            self.window?.rootViewController = nav
+            
+        } else {
+            print("First launch")
+            UserDefaults.standard.set(true, forKey: "launchedBefore")
+        }
+        
         return true
     }
 
