@@ -11,8 +11,8 @@ import SwiftyOnboard
 
 class ViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
-    let colors:[UIColor] = [#colorLiteral(red: 0.9980840087, green: 0.3723873496, blue: 0.4952875376, alpha: 1),#colorLiteral(red: 0.2666860223, green: 0.5116362572, blue: 1, alpha: 1),#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)]
-    var titleArray: [String] = ["Bienvenue dans votre nouvelle application anti-gaspillage !", "Des propositions certifiées", "Rejoignez la communauté anti-gaspillage !"]
+    let colors:[UIColor] = [#colorLiteral(red: 0.5291627645, green: 0.900844872, blue: 0.4401680529, alpha: 1),#colorLiteral(red: 0.3667565584, green: 0.8837113976, blue: 0.8860603571, alpha: 1),#colorLiteral(red: 0.1019607857, green: 0.2784313858, blue: 0.400000006, alpha: 1)]
+    var titleArray: [String] = ["Bienvenue !", "Des propositions certifiées", "Rejoignez la communauté"]
     var subTitleArray: [String] = ["Anti-waste va vous faire découvrir\n comment arrêter de jeter des produits\n dont la date limite de consommation est dépassée ou à quelques\n jours de l'être.", "Toutes les propositions anti-gaspillage\n sont validées par des médecins nutritionnistes et Les Restos du Coeur.", "Qu'attendez-vous pour arrêter de jeter l'argent par les fenêtres\n et faire un geste pour la planète ?"]
     
     var gradiant: CAGradientLayer = {
@@ -73,7 +73,7 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         //Set the image on the page:
         view.imageView.image = UIImage(named: "onboard\(index)")
         
-        //Set the font and color for the labels:
+        //Set the @ and color for the labels:
         view.title.font = UIFont(name: "Lato-Heavy", size: 22)
         view.subTitle.font = UIFont(name: "Lato-Regular", size: 16)
         
