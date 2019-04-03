@@ -11,7 +11,7 @@ import SwiftyOnboard
 
 class ViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
-    let colors:[UIColor] = [#colorLiteral(red: 0.5253944397, green: 0.8520762324, blue: 0.8496518135, alpha: 1),#colorLiteral(red: 0.5253944397, green: 0.8520762324, blue: 0.8496518135, alpha: 1),#colorLiteral(red: 0.3278443813, green: 0.3882383704, blue: 0.8835648298, alpha: 1)]
+    let colors:[UIColor] = [#colorLiteral(red: 0.5253944397, green: 0.8520762324, blue: 0.8496518135, alpha: 1),#colorLiteral(red: 0.2090480626, green: 0.8448944688, blue: 0.5354943275, alpha: 1),#colorLiteral(red: 0.3278443813, green: 0.3882383704, blue: 0.8835648298, alpha: 1)]
     var titleArray: [String] = ["Bienvenue !", "Des propositions certifiées !", "Rejoignez la communauté"]
     var subTitleArray: [String] = ["Anti-waste va vous faire découvrir comment arrêter de jeter des produits dont la date limite de consommation est dépassée ou à quelques jours de l'être.", "Toutes les propositions anti-gaspillage sont validées par des médecins nutritionnistes et Les Restos du Coeur. Nous ne vous mettrons jamais en danger.", "Qu'attendez-vous pour arrêter de jeter l'argent à la poubelle et faire un geste pour la planète ?"]
     
@@ -104,8 +104,8 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         overlay.continueButton.addTarget(self, action: #selector(handleContinue), for: .touchUpInside)
         
         //Setup for the overlay buttons:
-        overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
-        overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
+        //overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
+        //overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
         overlay.skipButton.setTitleColor(UIColor.white, for: .normal)
         overlay.skipButton.titleLabel?.font = UIFont(name: "Lato-Heavy", size: 16)
         
@@ -120,11 +120,13 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         overlay.continueButton.tag = Int(position)
         
         if currentPage == 0.0 || currentPage == 1.0 {
-            overlay.continueButton.setTitle("Continuer", for: .normal)
+            let image = UIImage(named: "continueButton.png")
+            overlay.continueButton.setImage(image, for: .normal)
             overlay.skipButton.setTitle("Passer", for: .normal)
             overlay.skipButton.isHidden = false
         } else {
-            overlay.continueButton.setTitle("C'est parti !", for: .normal)
+            let image = UIImage(named: "cestPartiButton.png")
+            overlay.continueButton.setImage(image, for: .normal)
             overlay.skipButton.isHidden = true
         }
     }
