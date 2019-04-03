@@ -13,7 +13,7 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
-	<string>Anti Waste</string>
+	<string>KEEPEAT</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>
@@ -45,7 +45,7 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>NSCameraUsageDescription</key>
-	<string>$(PRODUCT_NAME) Nous avons besoin de l&apos;accès à votre caméra afin de scanner les produits.</string>
+	<string>Nous avons besoin de l&apos;accès à votre caméra afin de scanner les produits.</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
