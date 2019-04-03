@@ -23,6 +23,8 @@
 		DB45E08522526C4B0009CB4A /* anti_wasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E08422526C4B0009CB4A /* anti_wasteUITests.swift */; };
 		DB45E09722526D1F0009CB4A /* ScannerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E09622526D1F0009CB4A /* ScannerViewController.swift */; };
 		DB72A95D22539CC70058CE98 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB45E07022526C4B0009CB4A /* Info.plist */; };
+		DB81FA46225512E0006BCF85 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB81FA44225512E0006BCF85 /* OpenSans-Bold.ttf */; };
+		DB81FA47225512E0006BCF85 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB81FA45225512E0006BCF85 /* OpenSans-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		DB45E08422526C4B0009CB4A /* anti_wasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = anti_wasteUITests.swift; sourceTree = "<group>"; };
 		DB45E08622526C4B0009CB4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB45E09622526D1F0009CB4A /* ScannerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerViewController.swift; sourceTree = "<group>"; };
+		DB81FA44225512E0006BCF85 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DB81FA45225512E0006BCF85 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		E66259B885EB267E41484D2C /* Pods-anti-waste.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.debug.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.debug.xcconfig"; sourceTree = "<group>"; };
 		FFF62E7175E865095E71EC88 /* Pods-anti-waste.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-anti-waste.release.xcconfig"; path = "Pods/Target Support Files/Pods-anti-waste/Pods-anti-waste.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -129,6 +133,8 @@
 				DB05A22C2253A0970078482C /* Lato-Bold.ttf */,
 				DB05A22D2253A0980078482C /* Lato-Heavy.ttf */,
 				DB05A22E2253A0990078482C /* Lato-Regular.ttf */,
+				DB81FA44225512E0006BCF85 /* OpenSans-Bold.ttf */,
+				DB81FA45225512E0006BCF85 /* OpenSans-Regular.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -297,11 +303,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB81FA47225512E0006BCF85 /* OpenSans-Regular.ttf in Resources */,
 				DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */,
 				DB45E06F22526C4B0009CB4A /* LaunchScreen.storyboard in Resources */,
 				DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */,
 				DB05A2352253AB4D0078482C /* Scanner.storyboard in Resources */,
 				DB45E06C22526C4B0009CB4A /* Assets.xcassets in Resources */,
+				DB81FA46225512E0006BCF85 /* OpenSans-Bold.ttf in Resources */,
 				DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */,
 				DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */,
 				DB72A95D22539CC70058CE98 /* Info.plist in Resources */,
