@@ -11,9 +11,9 @@ import SwiftyOnboard
 
 class ViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
-    let colors:[UIColor] = [#colorLiteral(red: 0.2090480626, green: 0.8448944688, blue: 0.5354943275, alpha: 1),#colorLiteral(red: 0.2090480626, green: 0.8448944688, blue: 0.5354943275, alpha: 1),#colorLiteral(red: 0.3278443813, green: 0.3882383704, blue: 0.8835648298, alpha: 1)]
+    let colors:[UIColor] = [#colorLiteral(red: 0.5253944397, green: 0.8520762324, blue: 0.8496518135, alpha: 1),#colorLiteral(red: 0.5253944397, green: 0.8520762324, blue: 0.8496518135, alpha: 1),#colorLiteral(red: 0.3278443813, green: 0.3882383704, blue: 0.8835648298, alpha: 1)]
     var titleArray: [String] = ["Bienvenue !", "Des propositions certifiées !", "Rejoignez la communauté"]
-    var subTitleArray: [String] = ["Anti-waste va vous faire découvrir\n comment arrêter de jeter des produits\n dont la date limite de consommation est dépassée ou à quelques\n jours de l'être.", "Toutes les propositions anti-gaspillage\n sont validées par des médecins nutritionnistes et Les Restos du Coeur.\n Nous ne vous mettrons jamais en danger.", "Qu'attendez-vous pour arrêter de jeter l'argent à la poubelle\n et faire un geste pour la planète ?"]
+    var subTitleArray: [String] = ["Anti-waste va vous faire découvrir comment arrêter de jeter des produits dont la date limite de consommation est dépassée ou à quelques jours de l'être.", "Toutes les propositions anti-gaspillage sont validées par des médecins nutritionnistes et Les Restos du Coeur. Nous ne vous mettrons jamais en danger.", "Qu'attendez-vous pour arrêter de jeter l'argent à la poubelle et faire un geste pour la planète ?"]
     
     var gradiant: CAGradientLayer = {
         //Gradiant for the background view
@@ -78,8 +78,11 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
     func swiftyOnboardPageForIndex(_ swiftyOnboard: SwiftyOnboard, index: Int) -> SwiftyOnboardPage? {
         let view = SwiftyOnboardPage()
         
+        //Set the logo on the page:
+        view.logoView.image = UIImage(named: "logo-onboarding-white")
+        
         //Set the image on the page:
-        view.imageView.image = UIImage(named: "onboard\(index)")
+        view.imageView.image = UIImage(named: "onboard-\(index)")
         
         //Set the @ and color for the labels:
         view.title.font = UIFont(name: "OpenSans-Bold", size: 29)
