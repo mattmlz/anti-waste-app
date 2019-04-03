@@ -20,8 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //Skip onboarding screen when it's not first launch
         let launchedBefore = UserDefaults.standard.bool(forKey: "launchedBefore")
         
-        //Use this value set to false for development mode, comment line 24 if you're in production mode
+        #if DEBUG
         UserDefaults.standard.set(false, forKey: "launchedBefore")
+        #endif
         
         if launchedBefore == true {
             let stor = UIStoryboard.init(name: "Scanner", bundle: nil)
