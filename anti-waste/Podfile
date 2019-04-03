@@ -7,6 +7,8 @@ target 'anti-waste' do
 
   # Pods for anti-waste
   pod 'SwiftyOnboard'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Alamofire'
 
   target 'anti-wasteTests' do
     inherit! :search_paths
