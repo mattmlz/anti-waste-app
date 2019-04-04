@@ -18,6 +18,9 @@
 		DB30F04C2256151900F73F21 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB30F04B2256151900F73F21 /* Home.storyboard */; };
 		DB30F04E22565FC600F73F21 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB30F04D22565FC600F73F21 /* ProductViewController.swift */; };
 		DB30F0502256600500F73F21 /* Product.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB30F04F2256600500F73F21 /* Product.storyboard */; };
+		DB30F0562256906A00F73F21 /* ProximaNova-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB30F0552256906A00F73F21 /* ProximaNova-SemiBold.ttf */; };
+		DB30F0582256907100F73F21 /* ProximaNova-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB30F0572256907100F73F21 /* ProximaNova-Regular.ttf */; };
+		DB30F05A2256907800F73F21 /* ProximaNova-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB30F0592256907800F73F21 /* ProximaNova-Bold.ttf */; };
 		DB45E06522526C4A0009CB4A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06422526C4A0009CB4A /* AppDelegate.swift */; };
 		DB45E06722526C4A0009CB4A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB45E06622526C4A0009CB4A /* ViewController.swift */; };
 		DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB45E06822526C4A0009CB4A /* Main.storyboard */; };
@@ -64,6 +67,9 @@
 		DB30F04B2256151900F73F21 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		DB30F04D22565FC600F73F21 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
 		DB30F04F2256600500F73F21 /* Product.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Product.storyboard; sourceTree = "<group>"; };
+		DB30F0552256906A00F73F21 /* ProximaNova-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-SemiBold.ttf"; sourceTree = "<group>"; };
+		DB30F0572256907100F73F21 /* ProximaNova-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Regular.ttf"; sourceTree = "<group>"; };
+		DB30F0592256907800F73F21 /* ProximaNova-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ProximaNova-Bold.ttf"; sourceTree = "<group>"; };
 		DB45E06122526C4A0009CB4A /* anti-waste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "anti-waste.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB45E06422526C4A0009CB4A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB45E06622526C4A0009CB4A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -143,6 +149,9 @@
 				DB05A22E2253A0990078482C /* Lato-Regular.ttf */,
 				DB81FA44225512E0006BCF85 /* OpenSans-Bold.ttf */,
 				DB81FA45225512E0006BCF85 /* OpenSans-Regular.ttf */,
+				DB30F0552256906A00F73F21 /* ProximaNova-SemiBold.ttf */,
+				DB30F0572256907100F73F21 /* ProximaNova-Regular.ttf */,
+				DB30F0592256907800F73F21 /* ProximaNova-Bold.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -319,11 +328,14 @@
 				DB30F04C2256151900F73F21 /* Home.storyboard in Resources */,
 				DB05A2302253A0990078482C /* Lato-Heavy.ttf in Resources */,
 				DB45E06F22526C4B0009CB4A /* LaunchScreen.storyboard in Resources */,
+				DB30F05A2256907800F73F21 /* ProximaNova-Bold.ttf in Resources */,
 				DB05A22F2253A0990078482C /* Lato-Bold.ttf in Resources */,
+				DB30F0562256906A00F73F21 /* ProximaNova-SemiBold.ttf in Resources */,
 				DB05A2352253AB4D0078482C /* Scanner.storyboard in Resources */,
 				DB45E06C22526C4B0009CB4A /* Assets.xcassets in Resources */,
 				DB81FA46225512E0006BCF85 /* OpenSans-Bold.ttf in Resources */,
 				DB05A2312253A0990078482C /* Lato-Regular.ttf in Resources */,
+				DB30F0582256907100F73F21 /* ProximaNova-Regular.ttf in Resources */,
 				DB45E06A22526C4A0009CB4A /* Main.storyboard in Resources */,
 				DB30F0502256600500F73F21 /* Product.storyboard in Resources */,
 				DB72A95D22539CC70058CE98 /* Info.plist in Resources */,
