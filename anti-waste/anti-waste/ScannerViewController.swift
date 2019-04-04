@@ -88,20 +88,21 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
             found(code: stringValue)
         }
         
-        dismiss(animated: true)
+        //dismiss(animated: true)
     }
     
     func found(code: String) {
-        captureSession.stopRunning()
         let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        
         if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
+            //send barcode to HomeViewController
+            homeViewController.resultBarCode = code
             self.present(homeViewController, animated: true, completion: nil)
         } else {
             print("scan error")
         }
-        
-        print(code)
     }
+    
     
     override var prefersStatusBarHidden: Bool {
         //display status bar
