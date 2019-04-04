@@ -96,7 +96,8 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     override var prefersStatusBarHidden: Bool {
-        return true
+        //display status bar
+        return false
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {
