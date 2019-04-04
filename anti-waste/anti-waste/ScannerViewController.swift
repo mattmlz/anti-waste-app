@@ -56,7 +56,7 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func failed() {
-        let ac = UIAlertController(title: "Le scanning n'est pas supporté", message: "Votre appareil ne supporte pas l'utilisation de la caméra. Merci d'essayer d'utiliser l'application avec un appareil disposant d'une caméra.", preferredStyle: .alert)
+        let ac = UIAlertController(title: "Le scan n'est pas supporté", message: "Votre appareil ne supporte pas l'utilisation de la caméra. Merci d'essayer d'utiliser l'application avec un appareil disposant d'une caméra.", preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "OK", style: .default))
         present(ac, animated: true)
         captureSession = nil
