@@ -2,11 +2,12 @@
   "images" : [
     {
       "idiom" : "universal",
-      "filename" : "logo-onboarding-white.png",
+      "filename" : "logo-onboarding.png",
       "scale" : "1x"
     },
     {
       "idiom" : "universal",
+      "filename" : "logo-onboarding-x2.png",
       "scale" : "2x"
     },
     {
