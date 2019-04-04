@@ -125,7 +125,7 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
             overlay.skipButton.setTitle("Passer", for: .normal)
             overlay.skipButton.isHidden = false
         } else {
-            let image = UIImage(named: "cestPartiButton.png")
+            let image = UIImage(named: "go-button.png")
             overlay.continueButton.setImage(image, for: .normal)
             overlay.skipButton.isHidden = true
         }
