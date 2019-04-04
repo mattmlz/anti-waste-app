@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     var swiftyOnboard: SwiftyOnboard!
     let colors:[UIColor] = [#colorLiteral(red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1),#colorLiteral(red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1),#colorLiteral(red: 0.9998916984, green: 1, blue: 0.9998809695, alpha: 1)]
     var titleArray: [String] = ["Le saviez-vous ?", "Propositions certifiées !", "Essayez pour changer !"]
-    var subTitleArray: [String] = ["Aujourd'hui en France, nous jetons chacun en moyenne plus de 20 kilos de produits encore consommables dans nos poubelles...", "Toutes les propositions anti-gaspillage sont validées par des médecins nutritionnistes et Les Restos du Coeur. Nous ne vous mettrons jamais en danger.", "Il suffit de scanner vos produits pour voir la réelle date limite de consommation !"]
+    var subTitleArray: [String] = ["Aujourd'hui en France, nous jetons\n chacun en moyenne plus de 20 kilos de\n produits encore consommables dans nos\n poubelles...", "Toutes les propositions anti-gaspillage sont\n validées par des médecins nutritionnistes\n et Les Restos du Coeur.\n Nous ne vous mettrons jamais en danger.", "Il suffit de scanner vos produits pour voir\n la réelle date limite de consommation !"]
     
     var gradiant: CAGradientLayer = {
         //Gradiant for the background view
