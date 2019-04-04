@@ -13,8 +13,8 @@ import SwiftyJSON
 class ProductViewController: UIViewController {
     //Barcode from ScannerViewController
     var resultBarCode: String!
-    @IBOutlet weak var testLabel: UILabel!
     
+    @IBOutlet weak var testLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +23,12 @@ class ProductViewController: UIViewController {
         
         print(resultBarCode!)
         getProductInfo(resultBarCode: resultBarCode)
+        
+    }
+    
+    //Set status bar color to white
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
     func getProductInfo (resultBarCode: String){
@@ -54,7 +60,7 @@ class ProductViewController: UIViewController {
                         
                         let finalScore = score/indexScore
                         if(finalScore > 0){
-                            print("Félicitations ! Ce produit peut etre consommé \(finalScore) jours après sa date limite de consommation (DLC).")
+                            print("Félicitations ! Ce produit peut être consommé \(finalScore) jours après sa date limite de consommation (DLC).")
                         } else{
                             print("Il ne faut pas consommer ce produit après sa date limite de consommation (DLC).")
                         }
