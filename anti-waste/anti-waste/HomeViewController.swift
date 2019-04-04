@@ -9,11 +9,16 @@
 import UIKit
 
 class HomeViewController: UIViewController {
-
+    //Barcode from ScannerViewController
+    var resultBarCode: String!
+    @IBOutlet weak var testLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        self.testLabel.text = resultBarCode
+        
+        print(resultBarCode!)
     }
     
 
