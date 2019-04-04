@@ -13,6 +13,7 @@
         <!--Product View Controller-->
         <scene sceneID="Qy3-h4-rwS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-W2-QR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="productViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4qK-LL-OGZ" customClass="ProductViewController" customModule="anti_waste" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pue-LF-l8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -55,7 +56,6 @@
                         <outlet property="testLabel" destination="Uyj-pO-seB" id="RfK-yT-arc"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-W2-QR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="172" y="152.47376311844079"/>
         </scene>

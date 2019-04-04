@@ -13,7 +13,7 @@ import SwiftyJSON
 class ProductViewController: UIViewController {
     //Barcode from ScannerViewController
     var resultBarCode: String!
-    
+
     @IBOutlet weak var testLabel: UILabel!
     
     override func viewDidLoad() {
@@ -30,6 +30,8 @@ class ProductViewController: UIViewController {
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
+
+    
     
     func getProductInfo (resultBarCode: String){
         Alamofire.request("https://fr.openfoodfacts.org/api/v0/produit/\(resultBarCode).json").responseJSON { (responseData) -> Void in
