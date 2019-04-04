@@ -34,12 +34,7 @@ class ProductViewController: UIViewController {
                 let productName = swiftyJsonVar["product"]["generic_name_fr"]
                 let productQuant = swiftyJsonVar["product"]["quantity"]
                 let productIngredients = swiftyJsonVar["product"]["ingredients_text_fr"].stringValue.localizedCapitalized
-                
-                print(productImage)
-                print(productName)
-                print(productQuant)
-                print(productIngredients)
-                
+          
                 Alamofire.request("https://lucaslareginie.fr/cdn/product.json").responseJSON { (responseDlc) -> Void in
                     
                     if((responseData.result.value) != nil) {
@@ -59,16 +54,14 @@ class ProductViewController: UIViewController {
                         
                         let finalScore = score/indexScore
                         if(finalScore > 0){
-                            print("Félicitations ! Ce produit peut etre consommé \(finalScore) jours après sa DLC")
+                            print("Félicitations ! Ce produit peut etre consommé \(finalScore) jours après sa date limite de consommation (DLC).")
                         } else{
-                            print("Il ne faut pas consommer ce produit après la DLC")
+                            print("Il ne faut pas consommer ce produit après sa date limite de consommation (DLC).")
                         }
-                        
                     } else{
                         print("error in getting score")
                     }
                 }
-                
             } else{
                 print("error in getting product")
             }
