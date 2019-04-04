@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Alamofire
+import SwiftyJSON
 
 class ProductViewController: UIViewController {
     //Barcode from ScannerViewController
@@ -20,8 +22,58 @@ class ProductViewController: UIViewController {
         self.testLabel.text = resultBarCode
         
         print(resultBarCode!)
+        getProductInfo(resultBarCode: resultBarCode)
     }
     
-    
+    func getProductInfo (resultBarCode: String){
+        Alamofire.request("https://fr.openfoodfacts.org/api/v0/produit/\(resultBarCode).json").responseJSON { (responseData) -> Void in
+            
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                let productImage = swiftyJsonVar["product"]["image_url"]
+                let productName = swiftyJsonVar["product"]["generic_name_fr"]
+                let productQuant = swiftyJsonVar["product"]["quantity"]
+                let productIngredients = swiftyJsonVar["product"]["ingredients_text_fr"].stringValue.localizedCapitalized
+                
+                print(productImage)
+                print(productName)
+                print(productQuant)
+                print(productIngredients)
+                
+                Alamofire.request("https://lucaslareginie.fr/cdn/product.json").responseJSON { (responseDlc) -> Void in
+                    
+                    if((responseData.result.value) != nil) {
+                        let swiftyJsonVarDlc = JSON(responseDlc.result.value!)
+                        let scoreArray = swiftyJsonVarDlc
+                        var score = 0
+                        var indexScore = 0
+                        
+                        for (index, element) in scoreArray.enumerated(){
+                            let ingr = scoreArray[index]["Ingrédient"].stringValue
+                            if(productIngredients.contains(ingr)){
+                                
+                                score += scoreArray[index]["Note"].intValue
+                                indexScore += 1
+                            }
+                        }
+                        
+                        let finalScore = score/indexScore
+                        if(finalScore > 0){
+                            print("Félicitations ! Ce produit peut etre consommé \(finalScore) jours après sa DLC")
+                        } else{
+                            print("Il ne faut pas consommer ce produit après la DLC")
+                        }
+                        
+                    } else{
+                        print("error in getting score")
+                    }
+                }
+                
+            } else{
+                print("error in getting product")
+            }
+        }
+        
+    }
 
 }
