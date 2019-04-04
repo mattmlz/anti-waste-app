@@ -85,8 +85,8 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         view.imageView.image = UIImage(named: "onboard-\(index)")
         
         //Set the @ and color for the labels:
-        view.title.font = UIFont(name: "OpenSans-Bold", size: 29)
-        view.subTitle.font = UIFont(name: "OpenSans-Regular", size: 16)
+        view.title.font = UIFont(name: "ProximaNova-Bold", size: 29)
+        view.subTitle.font = UIFont(name: "ProximaNova-Regular", size: 16)
         
         //Set the text in the page:
         view.title.text = titleArray[index]
@@ -107,7 +107,7 @@ extension ViewController: SwiftyOnboardDelegate, SwiftyOnboardDataSource {
         //overlay.continueButton.titleLabel?.font = UIFont(name: "Lato-Bold", size: 16)
         //overlay.continueButton.setTitleColor(UIColor.white, for: .normal)
         overlay.skipButton.setTitleColor(UIColor.white, for: .normal)
-        overlay.skipButton.titleLabel?.font = UIFont(name: "Lato-Heavy", size: 16)
+        overlay.skipButton.titleLabel?.font = UIFont(name: "ProximaNova-Bold", size: 16)
         
         //Return the overlay view:
         return overlay
