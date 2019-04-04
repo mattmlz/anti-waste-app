@@ -15,6 +15,22 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var historyButton: UIButton!
     
     
+    @IBAction func homeButtonAction(_ sender: Any) {
+        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
+            self.present(homeViewController, animated: false, completion: nil)
+        }
+    }
+    
+    
+    @IBAction func scanButtonAction(_ sender: Any) {
+        let scannerStoryboard: UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
+        if let scannerViewController = scannerStoryboard.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
+            scannerViewController.modalTransitionStyle = .crossDissolve
+            self.present(scannerViewController, animated: true, completion: nil)
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
