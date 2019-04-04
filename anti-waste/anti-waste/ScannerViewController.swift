@@ -92,12 +92,12 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func found(code: String) {
-        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        let productStoryboard: UIStoryboard = UIStoryboard(name: "Product", bundle: nil)
         
-        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
-            //send barcode to HomeViewController
-            homeViewController.resultBarCode = code
-            self.present(homeViewController, animated: true, completion: nil)
+        if let productViewController = productStoryboard.instantiateViewController(withIdentifier: "productViewController") as? ProductViewController {
+            //send barcode to ProductViewController
+            productViewController.resultBarCode = code
+            self.present(productViewController, animated: true, completion: nil)
         } else {
             print("scan error")
         }
