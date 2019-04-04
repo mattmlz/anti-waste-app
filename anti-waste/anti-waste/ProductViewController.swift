@@ -30,7 +30,6 @@ class ProductViewController: UIViewController {
     }
     
     @IBAction func scanButtonAction(_ sender: Any) {
-        print("ok")
         let scannerStoryboard: UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
         if let scannerViewController = scannerStoryboard.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
             scannerViewController.modalTransitionStyle = .crossDissolve
