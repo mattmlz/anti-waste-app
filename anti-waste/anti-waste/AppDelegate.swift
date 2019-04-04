@@ -26,7 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if launchedBefore == true {
             let stor = UIStoryboard.init(name: "Scanner", bundle: nil)
-            let scannerViewController = stor.instantiateViewController(withIdentifier: "ScannerViewController")
+            let scannerViewController = stor.instantiateViewController(withIdentifier: "scannerViewController")
             let nav = UINavigationController(rootViewController: scannerViewController)
             nav.navigationBar.isHidden = true
             self.window?.rootViewController = nav

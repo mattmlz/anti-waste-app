@@ -9,11 +9,15 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="ProximaNova-SemiBold.ttf">
+            <string>ProximaNova-Semibold</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Product View Controller-->
         <scene sceneID="Qy3-h4-rwS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-W2-QR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="productViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4qK-LL-OGZ" customClass="ProductViewController" customModule="anti_waste" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pue-LF-l8W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -37,25 +41,98 @@
                                 <rect key="frame" x="0.0" y="618" width="375" height="49"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <items>
-                                    <tabBarItem title="Accueil" image="home-navbar" id="NjN-Q7-4sz"/>
-                                    <tabBarItem title="Scan" image="scanner-navbar" id="E7n-cI-sMu"/>
-                                    <tabBarItem title="Historique" image="clock-navbar" id="G92-1T-xAF"/>
-                                </items>
+                                <items/>
                             </tabBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROR-1O-Hqr">
+                                <rect key="frame" x="15" y="35" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="backButtonAction:" destination="4qK-LL-OGZ" eventType="touchUpInside" id="ZuD-4G-1Gf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gly-5s-1i9">
+                                <rect key="frame" x="292" y="647" width="47" height="25"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                <state key="normal" title="Historique"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSc-Wu-lnr">
+                                <rect key="frame" x="172" y="647" width="30" height="25"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                <state key="normal" title="Scan"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="4qK-LL-OGZ" eventType="touchUpInside" id="bCD-uP-udv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-TG-c4V">
+                                <rect key="frame" x="42" y="647" width="33" height="25"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                <state key="normal" title="Accueil"/>
+                                <connections>
+                                    <action selector="homeButtonAction:" destination="4qK-LL-OGZ" eventType="touchUpInside" id="BhB-Ee-eg7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtK-aM-1qY">
+                                <rect key="frame" x="45" y="622" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="49H-ew-J7d"/>
+                                    <constraint firstAttribute="width" constant="30" id="duU-ot-Jqt"/>
+                                </constraints>
+                                <state key="normal" image="home-navbar"/>
+                                <connections>
+                                    <action selector="homeButtonAction:" destination="4qK-LL-OGZ" eventType="touchUpInside" id="gPU-bR-yO5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4C-3L-7FH">
+                                <rect key="frame" x="172" y="622" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OCU-gU-cbC"/>
+                                    <constraint firstAttribute="height" constant="30" id="TGX-1c-OMJ"/>
+                                </constraints>
+                                <state key="normal" image="scanner-navbar"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="4qK-LL-OGZ" eventType="touchUpInside" id="lDx-gP-bhJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xF-GY-wuE">
+                                <rect key="frame" x="300" y="622" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Tb1-7Y-oUf"/>
+                                    <constraint firstAttribute="width" constant="30" id="WAv-ig-dxU"/>
+                                </constraints>
+                                <state key="normal" image="clock-navbar"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="4xF-GY-wuE" secondAttribute="trailing" constant="45" id="025-R0-Hhy"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="gly-5s-1i9" secondAttribute="trailing" constant="36" id="21z-WS-bsI"/>
+                            <constraint firstItem="mtK-aM-1qY" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="45" id="3lR-dC-U4j"/>
+                            <constraint firstAttribute="bottom" secondItem="dSc-Wu-lnr" secondAttribute="bottom" constant="-5" id="5nf-uj-whm"/>
+                            <constraint firstItem="ROR-1O-Hqr" firstAttribute="top" secondItem="4PV-pn-l1k" secondAttribute="top" constant="15" id="7ge-vl-m6d"/>
+                            <constraint firstItem="ROR-1O-Hqr" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="15" id="B4T-i4-rcx"/>
+                            <constraint firstAttribute="bottom" secondItem="gly-5s-1i9" secondAttribute="bottom" constant="-5" id="D32-p2-R1N"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="4xF-GY-wuE" secondAttribute="bottom" constant="15" id="IcB-jr-O9W"/>
+                            <constraint firstItem="u4C-3L-7FH" firstAttribute="leading" secondItem="60Y-TG-c4V" secondAttribute="trailing" constant="97" id="Rie-uC-BKp"/>
+                            <constraint firstItem="dSc-Wu-lnr" firstAttribute="leading" secondItem="60Y-TG-c4V" secondAttribute="trailing" constant="97" id="TYJ-CR-Ujt"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="top" secondItem="pue-LF-l8W" secondAttribute="top" id="TuH-GH-r6r"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="u4C-3L-7FH" secondAttribute="bottom" constant="15" id="bLO-NZ-naI"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="trailing" secondItem="4PV-pn-l1k" secondAttribute="trailing" id="dBf-mf-EhR"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" id="j7o-KY-FLl"/>
+                            <constraint firstAttribute="bottom" secondItem="60Y-TG-c4V" secondAttribute="bottom" constant="-5" id="kg9-Ye-c8z"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="mtK-aM-1qY" secondAttribute="bottom" constant="15" id="scm-JO-E3A"/>
+                            <constraint firstItem="60Y-TG-c4V" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="42" id="yAp-Fa-oEe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PV-pn-l1k"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="ROR-1O-Hqr" id="sAh-31-3Rc"/>
+                        <outlet property="historyButton" destination="gly-5s-1i9" id="iXy-DW-YTH"/>
+                        <outlet property="homeButton" destination="60Y-TG-c4V" id="qEL-i0-j1S"/>
+                        <outlet property="scanButton" destination="dSc-Wu-lnr" id="jYB-XW-qCY"/>
                         <outlet property="testLabel" destination="Uyj-pO-seB" id="RfK-yT-arc"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-W2-QR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="172" y="152.47376311844079"/>
         </scene>

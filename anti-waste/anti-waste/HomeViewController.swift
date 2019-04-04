@@ -10,20 +10,27 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var scanButton: UIButton!
+    @IBOutlet weak var historyButton: UIButton!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        homeButton.setTitle("Accueil", for: .normal)
+        homeButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        homeButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
+        
+        scanButton.setTitle("Scan", for: .normal)
+        scanButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        scanButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
+        
+        historyButton.setTitle("Historique", for: .normal)
+        historyButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        historyButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

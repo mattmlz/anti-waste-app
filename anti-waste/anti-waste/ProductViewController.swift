@@ -15,11 +15,57 @@ class ProductViewController: UIViewController {
     var resultBarCode: String!
 
     @IBOutlet weak var testLabel: UILabel!
+    @IBOutlet weak var backButton: UIButton!
+    @IBOutlet weak var homeButton: UIButton!
+    @IBOutlet weak var scanButton: UIButton!
+    @IBOutlet weak var historyButton: UIButton!
+    
+    
+    @IBAction func backButtonAction(_ sender: Any) {
+        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
+            homeViewController.modalTransitionStyle = .flipHorizontal
+            self.present(homeViewController, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func scanButtonAction(_ sender: Any) {
+        print("ok")
+        let scannerStoryboard: UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
+        if let scannerViewController = scannerStoryboard.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
+            scannerViewController.modalTransitionStyle = .crossDissolve
+            self.present(scannerViewController, animated: true, completion: nil)
+        }
+    }
+
+    @IBAction func homeButtonAction(_ sender: Any) {
+        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
+            homeViewController.modalTransitionStyle = .flipHorizontal
+            self.present(homeViewController, animated: true, completion: nil)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.testLabel.text = resultBarCode
+        
+        backButton.setTitle("Retour", for: .normal)
+        backButton.setTitleColor(UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1), for: .normal)
+        backButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 18)
+        
+        homeButton.setTitle("Accueil", for: .normal)
+        homeButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        homeButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
+        
+        scanButton.setTitle("Scan", for: .normal)
+        scanButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        scanButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
+        
+        historyButton.setTitle("Historique", for: .normal)
+        historyButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
+        historyButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
         
         print(resultBarCode!)
         getProductInfo(resultBarCode: resultBarCode)
