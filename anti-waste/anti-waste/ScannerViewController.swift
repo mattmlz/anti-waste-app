@@ -92,9 +92,11 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func found(code: String) {
-        let viewController = ViewController()
-        viewController.modalTransitionStyle = .crossDissolve
-        present(viewController, animated: true, completion: nil)
+        captureSession.startRunning()
+        let homeViewController = HomeViewController()
+        homeViewController.modalTransitionStyle = .crossDissolve
+        present(homeViewController, animated: true, completion: nil)
+        
         print(code)
     }
     
