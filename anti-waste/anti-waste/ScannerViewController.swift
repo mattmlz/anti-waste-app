@@ -92,10 +92,13 @@ class ScannerViewController: UIViewController, AVCaptureMetadataOutputObjectsDel
     }
     
     func found(code: String) {
-        captureSession.startRunning()
-        let homeViewController = HomeViewController()
-        homeViewController.modalTransitionStyle = .crossDissolve
-        present(homeViewController, animated: true, completion: nil)
+        captureSession.stopRunning()
+        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
+            self.present(homeViewController, animated: true, completion: nil)
+        } else {
+            print("scan error")
+        }
         
         print(code)
     }

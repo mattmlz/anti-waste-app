@@ -13,7 +13,7 @@
         <!--Home View Controller-->
         <scene sceneID="jzW-Vf-6uq">
             <objects>
-                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ubc-1Y-6CL" customClass="HomeViewController" customModule="anti_waste" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ubc-1Y-6CL" customClass="HomeViewController" customModule="anti_waste" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VpE-V3-HAb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
