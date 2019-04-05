@@ -29,18 +29,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-pO-seB">
-                                <rect key="frame" x="42" y="566" width="291" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-header" translatesAutoresizingMaskIntoConstraints="NO" id="msp-kI-ZMh">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="7UR-4w-fUO"/>
-                                    <constraint firstAttribute="height" constant="82" id="ONL-S2-uuh"/>
+                                    <constraint firstAttribute="height" constant="306" id="ONL-S2-uuh"/>
                                 </constraints>
                             </imageView>
                             <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZrI-Qi-c5r">
@@ -109,41 +102,54 @@
                                 <state key="normal" image="clock-navbar"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 jour(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-ue-B4E">
-                                <rect key="frame" x="95" y="333.5" width="185" height="61"/>
+                                <rect key="frame" x="95" y="373.5" width="185" height="61"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 grammes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-n9-IbS">
-                                <rect key="frame" x="137.5" y="285" width="100" height="20"/>
+                                <rect key="frame" x="137.5" y="325" width="100" height="20"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ce produit reste consommable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-fD-Gmh">
-                                <rect key="frame" x="86" y="310" width="203" height="18.5"/>
+                                <rect key="frame" x="86" y="350" width="203" height="18.5"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="après sa date limite de consommation (DLC) !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha8-3U-WqZ">
-                                <rect key="frame" x="39.5" y="399.5" width="296" height="19"/>
+                                <rect key="frame" x="39.5" y="439.5" width="296" height="19"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le consommer serait dangereux pour votre santé !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czt-NF-R4R">
-                                <rect key="frame" x="19.5" y="448.5" width="336.5" height="19"/>
+                                <rect key="frame" x="19.5" y="488.5" width="336.5" height="19"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coca-cola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C44-3x-8w8">
-                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                <rect key="frame" x="16" y="290" width="343" height="30"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hfx-vr-8MH">
+                                <rect key="frame" x="107.5" y="80" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="BEc-Ym-tg5"/>
+                                    <constraint firstAttribute="width" constant="160" id="x7A-SR-vjC"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadios">
+                                        <integer key="value" value="80"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -160,8 +166,10 @@
                             <constraint firstItem="C44-3x-8w8" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="TEm-Zw-R2b"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="top" secondItem="pue-LF-l8W" secondAttribute="top" id="TuH-GH-r6r"/>
                             <constraint firstItem="ha8-3U-WqZ" firstAttribute="top" secondItem="JCm-ue-B4E" secondAttribute="bottom" constant="5" id="UyE-xX-B78"/>
-                            <constraint firstItem="4PV-pn-l1k" firstAttribute="top" secondItem="C44-3x-8w8" secondAttribute="bottom" constant="-260" id="VQc-kE-aue"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="top" secondItem="C44-3x-8w8" secondAttribute="bottom" constant="-300" id="VQc-kE-aue"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="C44-3x-8w8" secondAttribute="trailing" constant="16" id="WWq-zH-fAp"/>
+                            <constraint firstItem="hfx-vr-8MH" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="Ybh-Kl-DUZ"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="top" secondItem="hfx-vr-8MH" secondAttribute="bottom" constant="-220" id="Zsn-KJ-lEe"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="u4C-3L-7FH" secondAttribute="bottom" constant="15" id="bLO-NZ-naI"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="trailing" secondItem="4PV-pn-l1k" secondAttribute="trailing" id="dBf-mf-EhR"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" id="j7o-KY-FLl"/>
@@ -184,11 +192,11 @@
                         <outlet property="backButton" destination="ROR-1O-Hqr" id="sAh-31-3Rc"/>
                         <outlet property="historyButton" destination="gly-5s-1i9" id="iXy-DW-YTH"/>
                         <outlet property="homeButton" destination="60Y-TG-c4V" id="qEL-i0-j1S"/>
+                        <outlet property="productImageView" destination="hfx-vr-8MH" id="HF7-aJ-IJ7"/>
                         <outlet property="productNameLabel" destination="C44-3x-8w8" id="kQL-Pv-Ozi"/>
                         <outlet property="productQuantLabel" destination="r2X-n9-IbS" id="RIn-xU-wwb"/>
                         <outlet property="productSuppDaysLabel" destination="JCm-ue-B4E" id="Uek-Eu-5dR"/>
                         <outlet property="scanButton" destination="dSc-Wu-lnr" id="jYB-XW-qCY"/>
-                        <outlet property="testLabel" destination="Uyj-pO-seB" id="RfK-yT-arc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c4u-W2-QR7" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -198,7 +206,7 @@
     </scenes>
     <resources>
         <image name="clock-navbar" width="30" height="30"/>
-        <image name="green-header" width="375" height="82"/>
+        <image name="green-header" width="375" height="306"/>
         <image name="home-navbar" width="30" height="30"/>
         <image name="scanner-navbar" width="30" height="30"/>
     </resources>

@@ -14,7 +14,6 @@ class ProductViewController: UIViewController {
     //Barcode from ScannerViewController
     var resultBarCode: String!
 
-    @IBOutlet weak var testLabel: UILabel!
     @IBOutlet weak var backButton: UIButton!
     @IBOutlet weak var homeButton: UIButton!
     @IBOutlet weak var scanButton: UIButton!
@@ -26,6 +25,7 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var productSuppDaysLabel: UILabel!
     @IBOutlet weak var advertissementLabel: UILabel!
     
+    @IBOutlet weak var productImageView: UIImageView!
     
     @IBAction func backButtonAction(_ sender: Any) {
         let scannerStoryboard: UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
@@ -54,8 +54,6 @@ class ProductViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.testLabel.text = resultBarCode
-        
         backButton.setTitle("Retour", for: .normal)
         backButton.setTitleColor(UIColor(red: 255/255.0, green: 255/255.0, blue: 255/255.0, alpha: 1), for: .normal)
         backButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 18)
@@ -97,6 +95,39 @@ class ProductViewController: UIViewController {
                 
                 self.productNameLabel.text = productName.stringValue
                 self.productQuantLabel.text = productQuant.stringValue
+                print(productImage)
+                
+                let productPictureURL = URL(string: "\(productImage.stringValue)")!
+                
+                DispatchQueue.main.async {
+                    // Creating a session object with the default configuration.
+                    let session = URLSession(configuration: .default)
+                    
+                    // Define a download task. The download task will download the contents of the URL as a Data object and then you can do what you wish with that data.
+                    let downloadPicTask = session.dataTask(with: productPictureURL) { (data, response, error) in
+                        // The download has finished.
+                        if let e = error {
+                            print("Error downloading picture: \(e)")
+                        } else {
+                            // No errors found.
+                            // It would be weird if we didn't have a response, so check for that too.
+                            if let res = response as? HTTPURLResponse {
+                                print("Downloaded picture with response code \(res.statusCode)")
+                                if let imageData = data {
+                                    // Finally convert that Data into an image and do what you wish with it.
+                                    let productImageDownloaded = UIImage(data: imageData)
+                                    self.productImageView.image = productImageDownloaded
+                                } else {
+                                    print("Couldn't get image: Image is nil")
+                                }
+                            } else {
+                                print("Couldn't get response code for some reason")
+                            }
+                        }
+                    }
+                    
+                    downloadPicTask.resume()
+                }
           
                 Alamofire.request("https://lucaslareginie.fr/cdn/product.json").responseJSON { (responseDlc) -> Void in
                     
