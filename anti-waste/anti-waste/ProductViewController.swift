@@ -74,8 +74,7 @@ class ProductViewController: UIViewController {
         
         productNameLabel.textAlignment = .center
         advertissementLabel.textColor = UIColor(red: 255/255.0, green: 67/255.0, blue: 112/255.0, alpha: 1)
-        
-        print(resultBarCode!)
+
         getProductInfo(resultBarCode: resultBarCode)
     }
     
@@ -120,11 +119,9 @@ class ProductViewController: UIViewController {
                         if(finalScore > 0){
                             self.productSuppDaysLabel.text = "\(finalScore) jour(s)"
                             self.advertissementLabel.text = "Consommez-le sans crainte !"
-                            print("Félicitations ! Ce produit peut être consommé \(finalScore) jours après sa date limite de consommation (DLC).")
                         } else{
                             self.productSuppDaysLabel.text = "0 jour"
                             self.advertissementLabel.text = "Le consommer serait dangereux pour votre santé !"
-                            print("Il ne faut pas consommer ce produit après sa date limite de consommation (DLC).")
                         }
                     } else{
                         print("error in getting score")
