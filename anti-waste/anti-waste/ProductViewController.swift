@@ -95,8 +95,8 @@ class ProductViewController: UIViewController {
                 
                 self.productNameLabel.text = productName.stringValue
                 self.productQuantLabel.text = productQuant.stringValue
-                print(productImage)
                 
+                //Get product image in  URL format
                 let productPictureURL = URL(string: "\(productImage.stringValue)")!
                 
                 DispatchQueue.main.async {
