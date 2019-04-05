@@ -21,11 +21,17 @@ class ProductViewController: UIViewController {
     @IBOutlet weak var historyButton: UIButton!
     
     
+    @IBOutlet weak var productNameLabel: UILabel!
+    @IBOutlet weak var productQuantLabel: UILabel!
+    @IBOutlet weak var productSuppDaysLabel: UILabel!
+    @IBOutlet weak var advertissementLabel: UILabel!
+    
+    
     @IBAction func backButtonAction(_ sender: Any) {
-        let homeStoryboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
-        if let homeViewController = homeStoryboard.instantiateViewController(withIdentifier: "homeViewController") as? HomeViewController {
-            homeViewController.modalTransitionStyle = .flipHorizontal
-            self.present(homeViewController, animated: true, completion: nil)
+        let scannerStoryboard: UIStoryboard = UIStoryboard(name: "Scanner", bundle: nil)
+        if let scannerViewController = scannerStoryboard.instantiateViewController(withIdentifier: "scannerViewController") as? ScannerViewController {
+            scannerViewController.modalTransitionStyle = .crossDissolve
+            self.present(scannerViewController, animated: true, completion: nil)
         }
     }
     
@@ -66,9 +72,11 @@ class ProductViewController: UIViewController {
         historyButton.setTitleColor(UIColor(red: 195/255.0, green: 195/255.0, blue: 195/255.0, alpha: 1), for: .normal)
         historyButton.titleLabel?.font = UIFont(name: "ProximaNova-SemiBold", size: 10)
         
+        productNameLabel.textAlignment = .center
+        advertissementLabel.textColor = UIColor(red: 255/255.0, green: 67/255.0, blue: 112/255.0, alpha: 1)
+        
         print(resultBarCode!)
         getProductInfo(resultBarCode: resultBarCode)
-        
     }
     
     //Set status bar color to white
@@ -78,7 +86,7 @@ class ProductViewController: UIViewController {
 
     
     
-    func getProductInfo (resultBarCode: String){
+    func getProductInfo (resultBarCode: String) {
         Alamofire.request("https://fr.openfoodfacts.org/api/v0/produit/\(resultBarCode).json").responseJSON { (responseData) -> Void in
             
             if((responseData.result.value) != nil) {
@@ -87,6 +95,9 @@ class ProductViewController: UIViewController {
                 let productName = swiftyJsonVar["product"]["generic_name_fr"]
                 let productQuant = swiftyJsonVar["product"]["quantity"]
                 let productIngredients = swiftyJsonVar["product"]["ingredients_text_fr"].stringValue.localizedCapitalized
+                
+                self.productNameLabel.text = productName.stringValue
+                self.productQuantLabel.text = productQuant.stringValue
           
                 Alamofire.request("https://lucaslareginie.fr/cdn/product.json").responseJSON { (responseDlc) -> Void in
                     
@@ -107,8 +118,12 @@ class ProductViewController: UIViewController {
                         
                         let finalScore = score/indexScore
                         if(finalScore > 0){
+                            self.productSuppDaysLabel.text = "\(finalScore) jour(s)"
+                            self.advertissementLabel.text = "Consommez-le sans crainte !"
                             print("Félicitations ! Ce produit peut être consommé \(finalScore) jours après sa date limite de consommation (DLC).")
                         } else{
+                            self.productSuppDaysLabel.text = "0 jour"
+                            self.advertissementLabel.text = "Le consommer serait dangereux pour votre santé !"
                             print("Il ne faut pas consommer ce produit après sa date limite de consommation (DLC).")
                         }
                     } else{
@@ -119,7 +134,5 @@ class ProductViewController: UIViewController {
                 print("error in getting product")
             }
         }
-        
     }
-
 }

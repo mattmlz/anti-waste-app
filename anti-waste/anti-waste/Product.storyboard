@@ -10,6 +10,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
+        <array key="ProximaNova-Bold.ttf">
+            <string>ProximaNova-Bold</string>
+        </array>
+        <array key="ProximaNova-Regular.ttf">
+            <string>ProximaNova-Regular</string>
+        </array>
         <array key="ProximaNova-SemiBold.ttf">
             <string>ProximaNova-Semibold</string>
         </array>
@@ -24,7 +30,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uyj-pO-seB">
-                                <rect key="frame" x="42" y="323" width="291" height="21"/>
+                                <rect key="frame" x="42" y="566" width="291" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -55,8 +61,9 @@
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
                                 <state key="normal" title="Historique"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSc-Wu-lnr">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dSc-Wu-lnr">
                                 <rect key="frame" x="172" y="647" width="30" height="25"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
                                 <state key="normal" title="Scan"/>
                                 <connections>
@@ -64,7 +71,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="60Y-TG-c4V">
-                                <rect key="frame" x="42" y="647" width="33" height="25"/>
+                                <rect key="frame" x="45" y="647" width="33" height="25"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
                                 <state key="normal" title="Accueil"/>
                                 <connections>
@@ -83,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u4C-3L-7FH">
-                                <rect key="frame" x="172" y="622" width="30" height="30"/>
+                                <rect key="frame" x="175" y="622" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="OCU-gU-cbC"/>
                                     <constraint firstAttribute="height" constant="30" id="TGX-1c-OMJ"/>
@@ -101,33 +108,85 @@
                                 </constraints>
                                 <state key="normal" image="clock-navbar"/>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 jour(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JCm-ue-B4E">
+                                <rect key="frame" x="95" y="333.5" width="185" height="61"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="50"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="200 grammes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-n9-IbS">
+                                <rect key="frame" x="137.5" y="285" width="100" height="20"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ce produit reste consommable" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhw-fD-Gmh">
+                                <rect key="frame" x="86" y="310" width="203" height="18.5"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="après sa date limite de consommation (DLC) !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ha8-3U-WqZ">
+                                <rect key="frame" x="39.5" y="399.5" width="296" height="19"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Regular" family="Proxima Nova" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Le consommer serait dangereux pour votre santé !" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="czt-NF-R4R">
+                                <rect key="frame" x="19.5" y="448.5" width="336.5" height="19"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Coca-cola" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C44-3x-8w8">
+                                <rect key="frame" x="16" y="250" width="343" height="30"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Bold" family="Proxima Nova" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="4xF-GY-wuE" secondAttribute="trailing" constant="45" id="025-R0-Hhy"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="gly-5s-1i9" secondAttribute="trailing" constant="36" id="21z-WS-bsI"/>
-                            <constraint firstItem="mtK-aM-1qY" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="45" id="3lR-dC-U4j"/>
-                            <constraint firstAttribute="bottom" secondItem="dSc-Wu-lnr" secondAttribute="bottom" constant="-5" id="5nf-uj-whm"/>
+                            <constraint firstAttribute="bottom" secondItem="gly-5s-1i9" secondAttribute="bottom" constant="-5" id="2g6-am-VjZ"/>
                             <constraint firstItem="ROR-1O-Hqr" firstAttribute="top" secondItem="4PV-pn-l1k" secondAttribute="top" constant="15" id="7ge-vl-m6d"/>
+                            <constraint firstItem="czt-NF-R4R" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="9Zp-LA-UvV"/>
                             <constraint firstItem="ROR-1O-Hqr" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="15" id="B4T-i4-rcx"/>
-                            <constraint firstAttribute="bottom" secondItem="gly-5s-1i9" secondAttribute="bottom" constant="-5" id="D32-p2-R1N"/>
+                            <constraint firstAttribute="bottom" secondItem="60Y-TG-c4V" secondAttribute="bottom" constant="-5" id="CYB-Qi-QOB"/>
+                            <constraint firstItem="60Y-TG-c4V" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="45" id="DUB-YB-P5u"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="4xF-GY-wuE" secondAttribute="bottom" constant="15" id="IcB-jr-O9W"/>
-                            <constraint firstItem="u4C-3L-7FH" firstAttribute="leading" secondItem="60Y-TG-c4V" secondAttribute="trailing" constant="97" id="Rie-uC-BKp"/>
-                            <constraint firstItem="dSc-Wu-lnr" firstAttribute="leading" secondItem="60Y-TG-c4V" secondAttribute="trailing" constant="97" id="TYJ-CR-Ujt"/>
+                            <constraint firstItem="czt-NF-R4R" firstAttribute="top" secondItem="ha8-3U-WqZ" secondAttribute="bottom" constant="30" id="L7u-8H-Gyc"/>
+                            <constraint firstItem="C44-3x-8w8" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="TEm-Zw-R2b"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="top" secondItem="pue-LF-l8W" secondAttribute="top" id="TuH-GH-r6r"/>
+                            <constraint firstItem="ha8-3U-WqZ" firstAttribute="top" secondItem="JCm-ue-B4E" secondAttribute="bottom" constant="5" id="UyE-xX-B78"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="top" secondItem="C44-3x-8w8" secondAttribute="bottom" constant="-260" id="VQc-kE-aue"/>
+                            <constraint firstItem="4PV-pn-l1k" firstAttribute="trailing" secondItem="C44-3x-8w8" secondAttribute="trailing" constant="16" id="WWq-zH-fAp"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="u4C-3L-7FH" secondAttribute="bottom" constant="15" id="bLO-NZ-naI"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="trailing" secondItem="4PV-pn-l1k" secondAttribute="trailing" id="dBf-mf-EhR"/>
                             <constraint firstItem="msp-kI-ZMh" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" id="j7o-KY-FLl"/>
-                            <constraint firstAttribute="bottom" secondItem="60Y-TG-c4V" secondAttribute="bottom" constant="-5" id="kg9-Ye-c8z"/>
+                            <constraint firstItem="r2X-n9-IbS" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="l7a-aT-iUS"/>
+                            <constraint firstItem="Uhw-fD-Gmh" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="n3h-aQ-ZGW"/>
+                            <constraint firstItem="C44-3x-8w8" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="16" id="nGN-20-07u"/>
+                            <constraint firstItem="JCm-ue-B4E" firstAttribute="top" secondItem="Uhw-fD-Gmh" secondAttribute="bottom" constant="5" id="ovm-nh-ryM"/>
+                            <constraint firstItem="JCm-ue-B4E" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="p6q-AI-PY5"/>
+                            <constraint firstItem="u4C-3L-7FH" firstAttribute="leading" secondItem="60Y-TG-c4V" secondAttribute="trailing" constant="97" id="rlF-jX-N7F"/>
                             <constraint firstItem="4PV-pn-l1k" firstAttribute="bottom" secondItem="mtK-aM-1qY" secondAttribute="bottom" constant="15" id="scm-JO-E3A"/>
-                            <constraint firstItem="60Y-TG-c4V" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="42" id="yAp-Fa-oEe"/>
+                            <constraint firstItem="Uhw-fD-Gmh" firstAttribute="top" secondItem="r2X-n9-IbS" secondAttribute="bottom" constant="5" id="w6T-Ag-Gou"/>
+                            <constraint firstItem="ha8-3U-WqZ" firstAttribute="centerX" secondItem="pue-LF-l8W" secondAttribute="centerX" id="w9q-Fw-W5p"/>
+                            <constraint firstItem="mtK-aM-1qY" firstAttribute="leading" secondItem="4PV-pn-l1k" secondAttribute="leading" constant="45" id="xh4-0o-AJS"/>
+                            <constraint firstItem="r2X-n9-IbS" firstAttribute="top" secondItem="C44-3x-8w8" secondAttribute="bottom" constant="5" id="z2H-DA-5NY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4PV-pn-l1k"/>
                     </view>
                     <connections>
+                        <outlet property="advertissementLabel" destination="czt-NF-R4R" id="mlH-CV-8XO"/>
                         <outlet property="backButton" destination="ROR-1O-Hqr" id="sAh-31-3Rc"/>
                         <outlet property="historyButton" destination="gly-5s-1i9" id="iXy-DW-YTH"/>
                         <outlet property="homeButton" destination="60Y-TG-c4V" id="qEL-i0-j1S"/>
+                        <outlet property="productNameLabel" destination="C44-3x-8w8" id="kQL-Pv-Ozi"/>
+                        <outlet property="productQuantLabel" destination="r2X-n9-IbS" id="RIn-xU-wwb"/>
+                        <outlet property="productSuppDaysLabel" destination="JCm-ue-B4E" id="Uek-Eu-5dR"/>
                         <outlet property="scanButton" destination="dSc-Wu-lnr" id="jYB-XW-qCY"/>
                         <outlet property="testLabel" destination="Uyj-pO-seB" id="RfK-yT-arc"/>
                     </connections>
