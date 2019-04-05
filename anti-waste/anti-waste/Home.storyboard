@@ -37,10 +37,26 @@
                                 </constraints>
                                 <state key="normal" image="clock-navbar"/>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-7l-ST0">
+                                <rect key="frame" x="172" y="622" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="X7U-tn-JYm"/>
+                                    <constraint firstAttribute="height" constant="30" id="vog-Tf-a3n"/>
+                                </constraints>
+                                <state key="normal" image="scanner-navbar"/>
+                                <connections>
+                                    <action selector="scanButtonAction:" destination="ubc-1Y-6CL" eventType="touchUpInside" id="Zv7-JD-3dP"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pn1-ab-ge4">
                                 <rect key="frame" x="292" y="647" width="47" height="25"/>
                                 <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
                                 <state key="normal" title="Historique"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-A7-qh4">
+                                <rect key="frame" x="172" y="647" width="30" height="25"/>
+                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
+                                <state key="normal" title="Scan"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y6d-8s-VzV">
                                 <rect key="frame" x="42" y="647" width="33" height="25"/>
@@ -58,22 +74,13 @@
                                     <action selector="homeButtonAction:" destination="ubc-1Y-6CL" eventType="touchUpInside" id="OBr-jk-LyL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M0o-7l-ST0">
-                                <rect key="frame" x="172" y="622" width="30" height="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="green-header" translatesAutoresizingMaskIntoConstraints="NO" id="R9d-OI-Bvp">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="30" id="X7U-tn-JYm"/>
-                                    <constraint firstAttribute="height" constant="30" id="vog-Tf-a3n"/>
+                                    <constraint firstAttribute="width" constant="375" id="BTh-X7-aEi"/>
+                                    <constraint firstAttribute="height" constant="306" id="LZr-2u-hl4"/>
                                 </constraints>
-                                <state key="normal" image="scanner-navbar"/>
-                                <connections>
-                                    <action selector="scanButtonAction:" destination="ubc-1Y-6CL" eventType="touchUpInside" id="Zv7-JD-3dP"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ran-A7-qh4">
-                                <rect key="frame" x="172" y="647" width="30" height="25"/>
-                                <fontDescription key="fontDescription" name="ProximaNova-Semibold" family="Proxima Nova" pointSize="10"/>
-                                <state key="normal" title="Scan"/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
@@ -85,9 +92,12 @@
                             <constraint firstAttribute="bottom" secondItem="Pn1-ab-ge4" secondAttribute="bottom" constant="-5" id="I5z-N2-jvH"/>
                             <constraint firstAttribute="bottom" secondItem="ran-A7-qh4" secondAttribute="bottom" constant="-5" id="LTA-zv-fTT"/>
                             <constraint firstItem="sF9-m8-M7Y" firstAttribute="trailing" secondItem="Pn1-ab-ge4" secondAttribute="trailing" constant="36" id="RsH-PT-gGb"/>
+                            <constraint firstItem="R9d-OI-Bvp" firstAttribute="trailing" secondItem="sF9-m8-M7Y" secondAttribute="trailing" id="eam-HJ-eYF"/>
                             <constraint firstItem="sF9-m8-M7Y" firstAttribute="bottom" secondItem="M0o-7l-ST0" secondAttribute="bottom" constant="15" id="gqs-1D-asn"/>
+                            <constraint firstItem="R9d-OI-Bvp" firstAttribute="top" secondItem="VpE-V3-HAb" secondAttribute="top" id="m8y-eq-Ghd"/>
                             <constraint firstItem="Y6d-8s-VzV" firstAttribute="leading" secondItem="sF9-m8-M7Y" secondAttribute="leading" constant="42" id="mY8-0T-tcY"/>
                             <constraint firstItem="ran-A7-qh4" firstAttribute="leading" secondItem="Y6d-8s-VzV" secondAttribute="trailing" constant="97" id="ox0-VC-Z93"/>
+                            <constraint firstItem="R9d-OI-Bvp" firstAttribute="leading" secondItem="sF9-m8-M7Y" secondAttribute="leading" id="wcH-mF-5jO"/>
                             <constraint firstAttribute="bottom" secondItem="Y6d-8s-VzV" secondAttribute="bottom" constant="-5" id="xTv-J7-8L2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sF9-m8-M7Y"/>
@@ -105,6 +115,7 @@
     </scenes>
     <resources>
         <image name="clock-navbar" width="30" height="30"/>
+        <image name="green-header" width="375" height="306"/>
         <image name="home-navbar" width="30" height="30"/>
         <image name="scanner-navbar" width="30" height="30"/>
     </resources>
