@@ -150,6 +150,7 @@ class ProductViewController: UIViewController {
                         if(finalScore > 0){
                             self.productSuppDaysLabel.text = "\(finalScore) jour(s)"
                             self.advertissementLabel.text = "Consommez-le sans crainte !"
+                            self.advertissementLabel.textColor = UIColor(red: 53/255.0, green: 215/255.0, blue: 137/255.0, alpha: 1)
                         } else{
                             self.productSuppDaysLabel.text = "0 jour"
                             self.advertissementLabel.text = "Le consommer serait dangereux pour votre santé !"
