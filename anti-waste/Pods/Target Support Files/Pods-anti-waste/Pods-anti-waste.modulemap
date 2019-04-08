@@ -1,0 +1,6 @@
+framework module Pods_anti_waste {
+  umbrella header "Pods-anti-waste-umbrella.h"
+
+  export *
+  module * { export * }
+}
